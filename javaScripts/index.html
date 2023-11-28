@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- a basic program -->
+<!--   
+<h2>NobeToPro</h2>
+<p id="para1"></p>
+    <p id="intro" >A computer Science portal for Nobe</p>
+    <p id="demo"></p>
+<script>
+const element=document.getElementById("intro");
+document.getElementById("demo").innerHTML="NobeToPro :" +element.innerHTML; 
+</script> -->
+
+<!-- Addition of two numbers -->
+<p id="result"></p>
+<p>Enter  the value one</p><br>
+<input type="text" id="num1"><br>
+<p>Enter the value Two</p><br>
+<input type="text" id="num2"><br>
+<input type="button" id="add-button" value="Add" onclick="add()">
+<input type="button" id="sub-button" value="sub" onclick="sub()">
+<input type="button" id="mul-button" value="mul" onclick="mul()">
+<input type="button" id="div-button" value="divi" onclick="divi()">
+<input type="button" id="mod-button" value="Mod" onclick="modulus()">
+<input type="button" id="per-button" value="%" onclick="percent()" style="font-size: large;">
+
+
+
+<script>
+  
+
+  function percent(){
+    const number1=Number(document.getElementById("num1").value);
+      const number2=Number(document.getElementById("num2").value);
+      
+     let per=(number2*number1)/100;
+     document.getElementById("result").innerHTML ="Percent : " +per;
+     document.getElementById("result").style.color="red";
+  }
+
+
+  function modulus(){
+    const number1=Number(document.getElementById("num1").value);
+      const number2=Number(document.getElementById("num2").value);
+      
+     let modu=number1%number2;
+     document.getElementById("result").innerHTML ="Modulus : " +modu;
+     document.getElementById("result").style.color="red";
+  }
+
+
+
+  function divi(){
+      const number1=Number(document.getElementById("num1").value);
+      const number2=Number(document.getElementById("num2").value);
+      
+     let divi=number1/number2;
+     document.getElementById("result").innerHTML ="Division : " +divi;
+     document.getElementById("result").style.color="red";
+  }
+
+
+
+  function mul(){
+    const number1=Number(document.getElementById("num1").value);
+     const number2=Number(document.getElementById("num2").value);
+     let mul=number1*number2;
+     document.getElementById("result").innerHTML ="Multiplication : " +mul;
+     document.getElementById("result").style.color="red";
+  }
+
+
+  function sub(){
+    const number1=Number(document.getElementById("num1").value);
+     const number2=Number(document.getElementById("num2").value);
+     let sub=number1-number2;
+     document.getElementById("result").innerHTML ="Subtraction : " +sub;
+     document.getElementById("result").style.color="red";
+
+  }
+
+
+  function add(){
+     const number1=Number(document.getElementById("num1").value);
+     const number2=Number(document.getElementById("num2").value);
+
+
+     let add=number1+number2;
+     document.getElementById("result").innerHTML ="Addition : " +add;
+     document.getElementById("result").style.color="red";
+  }
+
+
+</script>
+
+</body>
+</html>
